@@ -41,15 +41,6 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center space-x-6">
-              <img 
-                src="/lovable-uploads/60938ce8-dd6d-4f97-9e7b-f291adc09569.png" 
-                alt="Invest.Rio e Prefeitura do Rio" 
-                className="h-48 object-contain"
-              />
-            </div>
-          </div>
           <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-6">
             Inovação em parceria com Secretaria de Turismo do Estado do RJ
           </Badge>
