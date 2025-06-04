@@ -46,7 +46,8 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/970ee4bf-3625-464a-8512-f1749d754732.png" 
                 alt="Invest.Rio e Prefeitura do Rio" 
-                className="h-16 object-contain filter brightness-0 invert"
+                className="h-16 object-contain opacity-90"
+                style={{ mixBlendMode: 'screen' }}
               />
             </div>
           </div>
