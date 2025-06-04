@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MapPin, TrendingUp, Users, DollarSign, MessageSquare, Globe, BarChart3, Building2 } from 'lucide-react';
+import { TopNavigation } from '@/components/TopNavigation';
 import { HeroSection } from '@/components/HeroSection';
 import { DashboardSection } from '@/components/DashboardSection';
 import { AISection } from '@/components/AISection';
@@ -15,12 +16,27 @@ import { AdvancedDataSection } from '@/components/AdvancedDataSection';
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700">
-      <HeroSection />
-      <DashboardSection />
-      <AdvancedDataSection />
-      <AISection />
-      <ImpactSection />
-      <InvestmentSection />
+      <TopNavigation />
+      
+      {/* Add padding-top to account for fixed navigation */}
+      <div className="pt-16">
+        <HeroSection />
+        <div id="dashboard">
+          <DashboardSection />
+        </div>
+        <div id="dados">
+          <AdvancedDataSection />
+        </div>
+        <div id="ia">
+          <AISection />
+        </div>
+        <div id="impacto">
+          <ImpactSection />
+        </div>
+        <div id="investimento">
+          <InvestmentSection />
+        </div>
+      </div>
       
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
