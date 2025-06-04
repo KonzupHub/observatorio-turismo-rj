@@ -44,10 +44,9 @@ const Index = () => {
           <div className="flex items-center justify-center mb-6">
             <div className="flex items-center space-x-6">
               <img 
-                src="/lovable-uploads/970ee4bf-3625-464a-8512-f1749d754732.png" 
+                src="/lovable-uploads/60938ce8-dd6d-4f97-9e7b-f291adc09569.png" 
                 alt="Invest.Rio e Prefeitura do Rio" 
-                className="h-16 object-contain opacity-90"
-                style={{ mixBlendMode: 'screen' }}
+                className="h-16 object-contain"
               />
             </div>
           </div>
