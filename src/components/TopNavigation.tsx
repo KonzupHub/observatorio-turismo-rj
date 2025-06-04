@@ -20,6 +20,8 @@ export const TopNavigation = () => {
     // Aqui você pode implementar a lógica de mudança de idioma
   };
 
+  const currentLanguage = languages.find(lang => lang.code === language);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-6">
@@ -56,10 +58,8 @@ export const TopNavigation = () => {
             <Select value={language} onValueChange={handleLanguageChange}>
               <SelectTrigger className="w-[140px] bg-white border-gray-300">
                 <div className="flex items-center space-x-2">
-                  <span className="text-lg">
-                    {languages.find(lang => lang.code === language)?.flag}
-                  </span>
-                  <SelectValue />
+                  <span className="text-lg">{currentLanguage?.flag}</span>
+                  <span>{currentLanguage?.name}</span>
                 </div>
               </SelectTrigger>
               <SelectContent>
