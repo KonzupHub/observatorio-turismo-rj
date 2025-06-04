@@ -29,7 +29,7 @@ export const HeroSection = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <Badge variant="outline" className="border-cyan-400 text-cyan-400 mb-6 text-sm px-4 py-2">
-          Inspirado na sabedoria TUPI: "Rio que encanta, dados que transformam"
+          Observatório de Dados do Estado do Rio de Janeiro
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-300 to-white bg-clip-text text-transparent leading-tight">
