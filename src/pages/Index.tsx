@@ -41,17 +41,12 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <div className="flex items-center justify-center mb-6 space-x-8">
-            <div className="flex items-center space-x-4">
+          <div className="flex items-center justify-center mb-6">
+            <div className="flex items-center space-x-6">
               <img 
-                src="/api/placeholder/120/60" 
-                alt="Secretaria de Turismo do Estado do RJ" 
-                className="h-12 object-contain"
-              />
-              <img 
-                src="/api/placeholder/120/60" 
-                alt="Invest.Rio" 
-                className="h-12 object-contain"
+                src="/lovable-uploads/970ee4bf-3625-464a-8512-f1749d754732.png" 
+                alt="Invest.Rio e Prefeitura do Rio" 
+                className="h-16 object-contain filter brightness-0 invert"
               />
             </div>
           </div>
