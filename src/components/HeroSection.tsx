@@ -33,21 +33,21 @@ export const HeroSection = () => {
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-300 to-white bg-clip-text text-transparent leading-tight">
-          Rio de Janeiro:<br />
+          Estado do Rio de Janeiro:<br />
           Dados que Encantam,<br />
           <span className="text-yellow-400">Insights que Movem Bilhões</span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto leading-relaxed">
-          Do Cristo à Faria Lima: transforme emoção turística em receita, emprego e investimento. 
+          Observatório de dados do Estado: transforme emoção turística em receita, emprego e investimento. 
           O primeiro observatório que fala sua língua - literalmente.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-black font-semibold px-8 py-4 text-lg">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 text-lg">
             Explore os Dados - Grátis
           </Button>
-          <Button size="lg" variant="outline" className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 text-lg">
+          <Button size="lg" className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-8 py-4 text-lg">
             Converse com a IA
           </Button>
         </div>

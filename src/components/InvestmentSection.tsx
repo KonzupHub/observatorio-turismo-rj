@@ -67,7 +67,7 @@ export const InvestmentSection = () => {
             <span className="text-blue-600">em Motor Econômico</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Investimento inicial para revolucionar a inteligência turística do Rio de Janeiro
+            Investimento inicial para revolucionar a inteligência turística do Estado do Rio de Janeiro
           </p>
         </div>
 
@@ -196,7 +196,7 @@ export const InvestmentSection = () => {
         {/* Call to Action */}
         <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
-            Pronto para Revolucionar o Turismo Carioca?
+            Pronto para Revolucionar o Turismo do Estado?
           </h3>
           <p className="text-xl mb-8 opacity-90">
             Junte-se à transformação digital que vai posicionar o Rio como referência mundial em inteligência turística
@@ -205,7 +205,7 @@ export const InvestmentSection = () => {
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4">
               Investir no Projeto
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4">
+            <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4">
               Agendar Apresentação
             </Button>
           </div>

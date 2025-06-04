@@ -13,7 +13,7 @@ export const ImpactSection = () => {
             Dinheiro em Movimento
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Do Cristo à Faria Lima:<br />
+            Observatório de Dados do Estado:<br />
             <span className="text-yellow-400">Negócios que Concretizam</span>
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -32,7 +32,7 @@ export const ImpactSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold mb-2">R$ 18.2 Bi</div>
+              <div className="text-3xl font-bold mb-2 text-white">R$ 18.2 Bi</div>
               <div className="text-sm text-blue-200">PIB Turístico 2024</div>
               <div className="text-green-400 text-sm mt-2">+22% vs 2023</div>
             </CardContent>
@@ -46,7 +46,7 @@ export const ImpactSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold mb-2">847K</div>
+              <div className="text-3xl font-bold mb-2 text-white">847K</div>
               <div className="text-sm text-blue-200">Postos de trabalho</div>
               <div className="text-green-400 text-sm mt-2">+15% vs 2023</div>
             </CardContent>
@@ -54,13 +54,13 @@ export const ImpactSection = () => {
 
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardHeader>
-              <CardTitle className="text-blue-400 flex items-center gap-2">
+              <CardTitle className="text-cyan-400 flex items-center gap-2">
                 <Building2 className="w-5 h-5" />
                 Investimentos
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold mb-2">R$ 4.7 Bi</div>
+              <div className="text-3xl font-bold mb-2 text-white">R$ 4.7 Bi</div>
               <div className="text-sm text-blue-200">Novos projetos</div>
               <div className="text-green-400 text-sm mt-2">+38% vs 2023</div>
             </CardContent>
