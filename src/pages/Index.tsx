@@ -46,7 +46,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/60938ce8-dd6d-4f97-9e7b-f291adc09569.png" 
                 alt="Invest.Rio e Prefeitura do Rio" 
-                className="h-32 object-contain"
+                className="h-48 object-contain"
               />
             </div>
           </div>
