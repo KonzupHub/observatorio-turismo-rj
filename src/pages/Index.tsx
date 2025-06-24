@@ -46,36 +46,9 @@ const Index = () => {
           </Badge>
           <h3 className="text-2xl font-bold mb-4">O Estado não pode planejar no escuro</h3>
           <p className="text-xl text-cyan-300 mb-8">Invista na inteligência que move o turismo. Invista no Rio.</p>
-          <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 py-3 mb-8">
+          <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 py-3">
             Comece Agora - Grátis
           </Button>
-          
-          {/* Logos Section */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-8 pt-8 border-t border-slate-700">
-            <div className="flex items-center gap-4">
-              <img 
-                src="/lovable-uploads/60938ce8-dd6d-4f97-9e7b-f291adc09569.png" 
-                alt="Secretaria de Turismo do Rio de Janeiro" 
-                className="h-16 w-auto"
-              />
-              <div className="text-left">
-                <p className="text-sm font-semibold text-cyan-300">Secretaria de Turismo</p>
-                <p className="text-xs text-slate-400">Estado do Rio de Janeiro</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <img 
-                src="/lovable-uploads/970ee4bf-3625-464a-8512-f1749d754732.png" 
-                alt="Prefeitura da Cidade do Rio de Janeiro" 
-                className="h-16 w-auto"
-              />
-              <div className="text-left">
-                <p className="text-sm font-semibold text-cyan-300">Prefeitura</p>
-                <p className="text-xs text-slate-400">Cidade do Rio de Janeiro</p>
-              </div>
-            </div>
-          </div>
         </div>
       </footer>
     </div>
