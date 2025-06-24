@@ -159,29 +159,6 @@ export const ImpactSection = () => {
             </Card>
           </div>
         </div>
-
-        {/* Success Metrics */}
-        <div className="text-center">
-          <h3 className="text-3xl font-bold mb-8">Impacto Mensurável</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-400 mb-2">89%</div>
-              <div className="text-sm text-blue-200">Decisões mais assertivas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-400 mb-2">67%</div>
-              <div className="text-sm text-blue-200">Redução tempo análise</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-cyan-400 mb-2">156%</div>
-              <div className="text-sm text-blue-200">ROI em campanhas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-400 mb-2">23%</div>
-              <div className="text-sm text-blue-200">Aumento receita média</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
