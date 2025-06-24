@@ -3,57 +3,9 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, Crown, Zap, Shield, Target, Rocket } from 'lucide-react';
+import { Check, Rocket, Target, TrendingUp, Users, Building2, Globe } from 'lucide-react';
 
 export const InvestmentSection = () => {
-  const plans = [
-    {
-      name: 'Acesso Aberto',
-      price: 'Grátis',
-      description: 'Para conhecer o potencial',
-      icon: <Zap className="w-6 h-6" />,
-      features: [
-        'Dashboards básicos',
-        'IA com 10 perguntas/mês',
-        'Relatórios mensais',
-        'Dados públicos',
-        'Suporte comunidade'
-      ],
-      highlight: false
-    },
-    {
-      name: 'Profissional',
-      price: 'R$ 897/mês',
-      description: 'Para PMEs e gestores',
-      icon: <Target className="w-6 h-6" />,
-      features: [
-        'IA ilimitada (3 idiomas)',
-        'Dashboards avançados',
-        'Relatórios customizados',
-        'API básica',
-        'Suporte especializado',
-        'Alertas em tempo real'
-      ],
-      highlight: true
-    },
-    {
-      name: 'Enterprise',
-      price: 'R$ 4.970/mês',
-      description: 'Para grandes empresas',
-      icon: <Crown className="w-6 h-6" />,
-      features: [
-        'Consultoria via IA',
-        'API completa',
-        'White-label disponível',
-        'Dados exclusivos',
-        'Suporte 24/7',
-        'Análises sob medida',
-        'Integração sistemas'
-      ],
-      highlight: false
-    }
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -143,54 +95,128 @@ export const InvestmentSection = () => {
           </Card>
         </div>
 
-        {/* Pricing Plans */}
+        {/* Key Metrics */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
-            Modelo Freemium Escalável
+            Métricas Chave do Projeto
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {plans.map((plan, index) => (
-              <Card 
-                key={index} 
-                className={`relative ${plan.highlight ? 'border-2 border-blue-500 shadow-lg' : 'border border-gray-200'}`}
-              >
-                {plan.highlight && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white">
-                    Mais Popular
-                  </Badge>
-                )}
-                <CardHeader className="text-center">
-                  <div className="flex justify-center mb-2">
-                    <div className={`p-3 rounded-full ${plan.highlight ? 'bg-blue-100' : 'bg-gray-100'}`}>
-                      {plan.icon}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <Card className="text-center">
+              <CardHeader className="pb-2">
+                <div className="flex justify-center mb-2">
+                  <TrendingUp className="w-8 h-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-lg">Crescimento</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-blue-600">300%</div>
+                <div className="text-sm text-gray-600">ao ano projetado</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader className="pb-2">
+                <div className="flex justify-center mb-2">
+                  <Users className="w-8 h-8 text-green-600" />
+                </div>
+                <CardTitle className="text-lg">Usuários</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-green-600">50K+</div>
+                <div className="text-sm text-gray-600">em 12 meses</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader className="pb-2">
+                <div className="flex justify-center mb-2">
+                  <Building2 className="w-8 h-8 text-purple-600" />
+                </div>
+                <CardTitle className="text-lg">Empresas</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-purple-600">5K+</div>
+                <div className="text-sm text-gray-600">parceiras ativas</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader className="pb-2">
+                <div className="flex justify-center mb-2">
+                  <Globe className="w-8 h-8 text-orange-600" />
+                </div>
+                <CardTitle className="text-lg">Mercado</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-orange-600">15%</div>
+                <div className="text-sm text-gray-600">share projetado</div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Value Proposition */}
+        <div className="mb-16">
+          <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-200">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl text-gray-900">
+                Por que Investir Agora?
+              </CardTitle>
+              <CardDescription className="text-lg">
+                O momento ideal para liderar a transformação digital do turismo
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Mercado em Expansão</h4>
+                      <p className="text-sm text-gray-600">Turismo no RJ cresce 15% ao ano, com demanda crescente por inteligência de dados</p>
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{plan.name}</CardTitle>
-                  <CardDescription>{plan.description}</CardDescription>
-                  <div className="text-3xl font-bold text-blue-600">{plan.price}</div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm">
-                        <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button 
-                    className={`w-full mt-6 ${
-                      plan.highlight 
-                        ? 'bg-blue-600 hover:bg-blue-700' 
-                        : 'bg-gray-600 hover:bg-gray-700'
-                    }`}
-                  >
-                    {plan.price === 'Grátis' ? 'Começar Grátis' : 'Solicitar Demonstração'}
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Primeira Vantagem</h4>
+                      <p className="text-sm text-gray-600">Pioneirismo na aplicação de IA para inteligência turística estadual</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Parceria Estratégica</h4>
+                      <p className="text-sm text-gray-600">Apoio oficial da Secretaria de Turismo do Estado do Rio de Janeiro</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Tecnologia Diferenciada</h4>
+                      <p className="text-sm text-gray-600">IA conversacional multilíngue específica para turismo</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Escalabilidade Nacional</h4>
+                      <p className="text-sm text-gray-600">Modelo replicável para outros estados brasileiros</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">ROI Comprovado</h4>
+                      <p className="text-sm text-gray-600">Modelo de negócio testado com projeções conservadoras</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Call to Action */}
