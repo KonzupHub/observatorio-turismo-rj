@@ -2,9 +2,16 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Sun, Waves, DollarSign, Globe } from 'lucide-react';
+import { Sun, Waves, Football, Globe } from 'lucide-react';
 
 export const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background overlay */}
@@ -23,7 +30,7 @@ export const HeroSection = () => {
       </div>
       <div className="absolute bottom-40 left-20 animate-pulse delay-1000">
         <div className="bg-white/10 backdrop-blur-sm rounded-full p-4">
-          <DollarSign className="w-8 h-8 text-green-300" />
+          <Football className="w-8 h-8 text-green-300" />
         </div>
       </div>
       
@@ -44,10 +51,18 @@ export const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 text-lg">
-            Explore os Dados - Grátis
+          <Button 
+            size="lg" 
+            className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 text-lg"
+            onClick={() => scrollToSection('dashboard')}
+          >
+            Explore os Dados
           </Button>
-          <Button size="lg" className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-8 py-4 text-lg">
+          <Button 
+            size="lg" 
+            className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-8 py-4 text-lg"
+            onClick={() => scrollToSection('ia')}
+          >
             Converse com a IA
           </Button>
         </div>
