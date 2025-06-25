@@ -39,8 +39,15 @@ const Index = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8">
+      <footer className="bg-slate-900 text-white py-6">
         <div className="container mx-auto px-6 text-center">
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/logo-rio-turismo.png" 
+              alt="Rio Turismo" 
+              className="h-16 w-auto object-contain"
+            />
+          </div>
           <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-4">
             Inovação em parceria com Secretaria de Turismo do Estado do RJ
           </Badge>
