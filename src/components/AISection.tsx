@@ -11,7 +11,7 @@ export const AISection = () => {
   const [messages, setMessages] = useState([
     {
       type: 'ai',
-      content: '👋 Olá! Sou a IA Turística do Rio. Pergunte qualquer coisa sobre nossos dados - posso responder em português, inglês ou espanhol!'
+      content: '👋 Olá! Sou a IA Turística do Rio. Pergunte qualquer coisa sobre turismo na cidade do Rio de Janeiro - posso responder em português, inglês ou espanhol!'
     }
   ]);
 
@@ -29,17 +29,19 @@ export const AISection = () => {
 
     setMessages(prev => [...prev, { type: 'user', content: q }]);
     
-    // Simulate AI response
+    // Simulate AI response focused on Rio de Janeiro
     setTimeout(() => {
       let response = '';
       if (q.includes('europeu') || q.includes('Europa')) {
-        response = '🇪🇺 **Crescimento Europeu por Bairro:**\n\nSanta Teresa lidera com +47% de turistas europeus em 2024! Os dados mostram que europeus buscam experiências autênticas:\n\n• **Santa Teresa**: +47% (média R$ 280/dia)\n• **Lapa**: +32% (vida noturna cultural)\n• **Centro Histórico**: +28% (turismo histórico)\n\n💡 **Insight**: Europeus gastam 23% mais em experiências culturais que americanos.';
+        response = '🇪🇺 **Crescimento Europeu por Bairro no Rio:**\n\nSanta Teresa lidera com +47% de turistas europeus em 2024! Os dados mostram que europeus buscam experiências autênticas na cidade:\n\n• **Santa Teresa**: +47% (média R$ 280/dia)\n• **Lapa**: +32% (vida noturna cultural)\n• **Centro Histórico**: +28% (turismo histórico)\n• **Zona Sul**: +25% (praias e natureza)\n\n💡 **Insight**: Europeus gastam 23% mais em experiências culturais cariocas que americanos.';
       } else if (q.includes('americanos') || q.includes('EUA')) {
-        response = '🇺🇸 **Estratégia para Turistas Americanos 2025:**\n\n**Oportunidades identificadas:**\n• Voos diretos para Miami aumentaram demanda em 34%\n• Americanos preferem estadias de 7+ dias (vs 4 dias média)\n• Gastam R$ 420/dia (22% acima da média)\n\n**Recomendações:**\n1. Campanhas em dezembro-fevereiro\n2. Pacotes longos (7-10 dias)\n3. Foco em Barra e Copacabana\n4. Marketing digital no Instagram/TikTok';
+        response = '🇺🇸 **Estratégia para Turistas Americanos no Rio 2025:**\n\n**Oportunidades identificadas na cidade:**\n• Voos diretos para Miami aumentaram demanda em 34%\n• Americanos preferem estadias de 7+ dias no Rio (vs 4 dias média)\n• Gastam R$ 420/dia na cidade (22% acima da média)\n\n**Recomendações para o Rio:**\n1. Campanhas em dezembro-fevereiro\n2. Pacotes longos (7-10 dias)\n3. Foco em Barra, Copacabana e Ipanema\n4. Marketing digital destacando Cristo Redentor e Pão de Açúcar';
       } else if (q.includes('carnaval') || q.includes('Carnaval')) {
-        response = '🎭 **Impacto do Carnaval nos Hotéis:**\n\n**Dados reveladores:**\n• Ticket médio sobe **312%** durante carnaval\n• Ocupação atinge 97% (vs 78% média anual)\n• Receita de 5 dias = 2 meses normais\n\n**Por categoria:**\n• Luxo: R$ 1.840/noite (+420%)\n• Médio: R$ 680/noite (+280%)\n• Econômico: R$ 320/noite (+200%)\n\n💰 **Total**: R$ 2.1 bilhões em 5 dias!';
+        response = '🎭 **Impacto do Carnaval nos Hotéis do Rio:**\n\n**Dados reveladores da cidade:**\n• Ticket médio sobe **312%** durante carnaval carioca\n• Ocupação atinge 97% na cidade (vs 78% média anual)\n• Receita de 5 dias = 2 meses normais\n\n**Por categoria no Rio:**\n• Luxo (Copacabana/Ipanema): R$ 1.840/noite (+420%)\n• Médio (Zona Sul): R$ 680/noite (+280%)\n• Econômico (Centro/Lapa): R$ 320/noite (+200%)\n\n💰 **Total Rio**: R$ 2.1 bilhões em 5 dias!';
+      } else if (q.includes('Copa') || q.includes('2014')) {
+        response = '⚽ **Impacto da Copa 2014 no Turismo Carioca:**\n\n**Transformações na cidade:**\n• +185% visitantes internacionais durante o evento\n• Infraestrutura: Aeroporto Santos Dumont, VLT, Porto Maravilha\n• Legado hoteleiro: +12.000 novos leitos na cidade\n• Copacabana registrou ocupação de 98%\n\n**Efeitos duradouros:**\n• Rio consolidou-se como destino esportivo\n• Aumento de 34% em eventos internacionais pós-Copa\n• Maracanã virou ícone turístico permanente';
       } else {
-        response = `📊 Analisando sua pergunta sobre "${q}"...\n\nCom base nos dados do Observatório, posso te ajudar com insights específicos sobre:\n\n• Padrões de visitação\n• Impactos econômicos\n• Tendências sazonais\n• Perfis de turistas\n• Oportunidades de investimento\n\nPoderia ser mais específico sobre qual aspecto te interessa mais?`;
+        response = `📊 Analisando sua pergunta sobre "${q}" no contexto do Rio de Janeiro...\n\nCom base nos dados do Observatório da cidade, posso te ajudar com insights específicos sobre:\n\n• Padrões de visitação na cidade do Rio\n• Impactos econômicos nos bairros cariocas\n• Tendências sazonais no turismo local\n• Perfis de turistas que visitam o Rio\n• Oportunidades de investimento na cidade\n\nPoderia ser mais específico sobre qual aspecto do turismo carioca te interessa mais?`;
       }
       
       setMessages(prev => [...prev, { type: 'ai', content: response }]);

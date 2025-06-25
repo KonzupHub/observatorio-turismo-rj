@@ -46,9 +46,6 @@ const Index = () => {
           </Badge>
           <h3 className="text-2xl font-bold mb-4">O Estado não pode planejar no escuro</h3>
           <p className="text-xl text-cyan-300 mb-8">Invista na inteligência que move o turismo. Invista no Rio.</p>
-          <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 py-3">
-            Comece Agora - Grátis
-          </Button>
         </div>
       </footer>
     </div>
