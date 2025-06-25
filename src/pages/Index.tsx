@@ -43,9 +43,9 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="flex justify-center mb-4">
             <img 
-              src="/logo-rio-turismo.png" 
+              src="/lovable-uploads/2428dd07-d5e9-43f7-a328-cc99ae229246.png" 
               alt="Rio Turismo" 
-              className="h-16 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </div>
           <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-4">
