@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, Users, DollarSign, Globe } from 'lucide-react';
+import { Sun, Waves, DollarSign, Globe } from 'lucide-react';
 
 export const HeroSection = () => {
   return (
@@ -13,12 +13,12 @@ export const HeroSection = () => {
       {/* Floating elements */}
       <div className="absolute top-20 left-10 animate-pulse">
         <div className="bg-white/10 backdrop-blur-sm rounded-full p-4">
-          <TrendingUp className="w-8 h-8 text-cyan-300" />
+          <Sun className="w-8 h-8 text-yellow-300" />
         </div>
       </div>
       <div className="absolute top-40 right-20 animate-pulse delay-500">
         <div className="bg-white/10 backdrop-blur-sm rounded-full p-4">
-          <Users className="w-8 h-8 text-blue-300" />
+          <Waves className="w-8 h-8 text-cyan-300" />
         </div>
       </div>
       <div className="absolute bottom-40 left-20 animate-pulse delay-1000">

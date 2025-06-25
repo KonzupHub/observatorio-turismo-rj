@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MapPin, TrendingUp, Users, DollarSign, MessageSquare, Globe, BarChart3, Building2 } from 'lucide-react';
+import { MapPin, TrendingUp, Users, DollarSign, MessageSquare, Globe, BarChart3, Building2, Sun, Waves } from 'lucide-react';
 import { TopNavigation } from '@/components/TopNavigation';
 import { HeroSection } from '@/components/HeroSection';
 import { DashboardSection } from '@/components/DashboardSection';
@@ -39,13 +39,13 @@ const Index = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-slate-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-6">
+          <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-4">
             Inovação em parceria com Secretaria de Turismo do Estado do RJ
           </Badge>
-          <h3 className="text-2xl font-bold mb-4">O Estado não pode planejar no escuro</h3>
-          <p className="text-xl text-cyan-300 mb-8">Invista na inteligência que move o turismo. Invista no Rio.</p>
+          <h3 className="text-2xl font-bold mb-3">O Estado não pode planejar no escuro</h3>
+          <p className="text-xl text-cyan-300">Invista na inteligência que move o turismo. Invista no Rio.</p>
         </div>
       </footer>
     </div>
