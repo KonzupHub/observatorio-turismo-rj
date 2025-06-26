@@ -75,7 +75,7 @@ export const TopNavigation = () => {
             </Select>
 
             <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 hidden md:inline-flex">
-              Explore Grátis
+              Explore Mais
             </Button>
 
             {/* Mobile Menu Button */}
@@ -108,7 +108,7 @@ export const TopNavigation = () => {
                 Investimento
               </a>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium w-full mt-4">
-                Explore Grátis
+                Explore Mais
               </Button>
             </div>
           </div>

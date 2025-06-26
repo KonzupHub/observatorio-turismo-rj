@@ -6,6 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Rocket, Target, TrendingUp, Users, Building2, Globe } from 'lucide-react';
 
 export const InvestmentSection = () => {
+  const openWhatsApp = () => {
+    window.open('https://wa.me/5521974534073', '_blank');
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -228,10 +232,18 @@ export const InvestmentSection = () => {
             Junte-se à transformação digital que vai posicionar o Rio como referência mundial em inteligência turística
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4">
+            <Button 
+              size="lg" 
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4"
+              onClick={openWhatsApp}
+            >
               Investir no Projeto
             </Button>
-            <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4">
+            <Button 
+              size="lg" 
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4"
+              onClick={openWhatsApp}
+            >
               Agendar Apresentação
             </Button>
           </div>
