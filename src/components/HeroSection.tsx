@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Sun, Waves, Football, Globe } from 'lucide-react';
+import { Sun, Waves, Zap, Globe } from 'lucide-react';
 
 export const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -30,7 +30,7 @@ export const HeroSection = () => {
       </div>
       <div className="absolute bottom-40 left-20 animate-pulse delay-1000">
         <div className="bg-white/10 backdrop-blur-sm rounded-full p-4">
-          <Football className="w-8 h-8 text-green-300" />
+          <Zap className="w-8 h-8 text-green-300" />
         </div>
       </div>
       
