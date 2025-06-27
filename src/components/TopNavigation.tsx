@@ -20,6 +20,13 @@ export const TopNavigation = () => {
     // Aqui você pode implementar a lógica de mudança de idioma
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const currentLanguage = languages.find(lang => lang.code === language);
 
   return (
@@ -74,7 +81,10 @@ export const TopNavigation = () => {
               </SelectContent>
             </Select>
 
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 hidden md:inline-flex">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 hidden md:inline-flex"
+              onClick={() => scrollToSection('dashboard')}
+            >
               Explore Mais
             </Button>
 
@@ -107,7 +117,10 @@ export const TopNavigation = () => {
               <a href="#investimento" className="text-gray-700 hover:text-blue-600 font-medium">
                 Investimento
               </a>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium w-full mt-4">
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium w-full mt-4"
+                onClick={() => scrollToSection('dashboard')}
+              >
                 Explore Mais
               </Button>
             </div>
