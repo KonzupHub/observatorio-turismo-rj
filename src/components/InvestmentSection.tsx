@@ -19,56 +19,17 @@ export const InvestmentSection = () => {
             Oportunidade de Investimento
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            MVP que Transforma o Turismo<br />
+            Dados que Transformam o Turismo<br />
             <span className="text-blue-600">em Motor Econômico</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Investimento inicial para revolucionar a inteligência turística do Estado do Rio de Janeiro
+            Investimento inicial para revolucionar a inteligência turística do Município do Rio de Janeiro
           </p>
         </div>
 
-        {/* Investment Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <Card className="border-2 border-blue-200">
-            <CardHeader>
-              <CardTitle className="text-2xl text-blue-600 flex items-center gap-2">
-                <Rocket className="w-6 h-6" />
-                Investimento MVP
-              </CardTitle>
-              <CardDescription>12 meses de operação completa</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="text-4xl font-bold text-blue-600 mb-4">R$ 2.000.000</div>
-              <div className="space-y-3 text-gray-700">
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>Desenvolvimento plataforma completa</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>IA conversacional trilíngue</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>Integração dados turísticos</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>Infraestrutura e segurança</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>Marketing e comunicação</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-600" />
-                  <span>Equipe especializada</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border-2 border-green-200">
+        {/* Investment Details - Only Return Projections Card */}
+        <div className="flex justify-center mb-16">
+          <Card className="border-2 border-green-200 max-w-md">
             <CardHeader>
               <CardTitle className="text-2xl text-green-600 flex items-center gap-2">
                 <Target className="w-6 h-6" />
@@ -184,14 +145,14 @@ export const InvestmentSection = () => {
                     <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Primeira Vantagem</h4>
-                      <p className="text-sm text-gray-600">Pioneirismo na aplicação de IA para inteligência turística estadual</p>
+                      <p className="text-sm text-gray-600">Pioneirismo na aplicação de IA para inteligência turística municipal</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Parceria Estratégica</h4>
-                      <p className="text-sm text-gray-600">Apoio oficial da Secretaria de Turismo do Estado do Rio de Janeiro</p>
+                      <p className="text-sm text-gray-600">Apoio oficial da Secretaria de Turismo do Município do Rio de Janeiro</p>
                     </div>
                   </div>
                 </div>
@@ -207,7 +168,7 @@ export const InvestmentSection = () => {
                     <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Escalabilidade Nacional</h4>
-                      <p className="text-sm text-gray-600">Modelo replicável para outros estados brasileiros</p>
+                      <p className="text-sm text-gray-600">Modelo replicável para outros municípios brasileiros</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -226,7 +187,7 @@ export const InvestmentSection = () => {
         {/* Call to Action */}
         <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
-            Pronto para Revolucionar o Turismo do Estado?
+            Pronto para Revolucionar o Turismo do Município?
           </h3>
           <p className="text-xl mb-8 opacity-90">
             Junte-se à transformação digital que vai posicionar o Rio como referência mundial em inteligência turística

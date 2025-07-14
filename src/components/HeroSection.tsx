@@ -36,7 +36,7 @@ export const HeroSection = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <Badge variant="outline" className="border-cyan-400 text-cyan-400 mb-6 text-sm px-4 py-2">
-          Observatório de Dados do Estado do Rio de Janeiro
+          Observatório de Dados do Município do Rio de Janeiro
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-300 to-white bg-clip-text text-transparent leading-tight">
@@ -46,7 +46,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto leading-relaxed">
-          Observatório de dados do Estado: transforme emoção turística em receita, emprego e investimento. 
+          Observatório de dados do Município: transforme emoção turística em receita, emprego e investimento. 
           O primeiro observatório que fala sua língua - literalmente.
         </p>
         

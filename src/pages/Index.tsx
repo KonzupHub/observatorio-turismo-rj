@@ -44,7 +44,7 @@ const Index = () => {
           <Badge variant="outline" className="border-cyan-400 text-cyan-400 text-sm px-4 py-2 mb-4">
             Inovação em parceria com Secretaria Municipal do Rio de Janeiro
           </Badge>
-          <h3 className="text-2xl font-bold mb-3">O Estado não pode planejar no escuro</h3>
+          <h3 className="text-2xl font-bold mb-3">O Município não pode planejar no escuro</h3>
           <p className="text-xl text-cyan-300">Invista na inteligência que move o turismo. Invista no Rio.</p>
         </div>
       </footer>
