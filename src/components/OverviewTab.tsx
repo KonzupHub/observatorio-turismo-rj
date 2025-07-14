@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Users, Building2, Globe, MapPin } from 'lucide-react';
-import { TourismChart } from '../TourismChart';
+import { TourismChart } from './TourismChart';
 
 export const OverviewTab = () => {
   return (
