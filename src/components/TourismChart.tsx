@@ -17,7 +17,7 @@ export const TourismChart: React.FC<TourismChartProps> = ({ title, data }) => {
     <Card>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>Dados mensais de 2024</CardDescription>
+        <CardDescription>Dados mensais 2024 - Município do RJ</CardDescription>
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={300}>
