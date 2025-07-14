@@ -27,37 +27,41 @@ export const InvestmentSection = () => {
           </p>
         </div>
 
-        {/* Investment Details - Only Return Projections Card */}
-        <div className="flex justify-center mb-16">
-          <Card className="border-2 border-green-200 max-w-md">
-            <CardHeader>
-              <CardTitle className="text-2xl text-green-600 flex items-center gap-2">
-                <Target className="w-6 h-6" />
-                Retorno Projetado
-              </CardTitle>
-              <CardDescription>Impacto econômico esperado</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <div className="text-2xl font-bold text-green-600">R$ 8.5M</div>
-                  <div className="text-sm text-gray-600">Receita ano 1</div>
+        {/* Return Projections - Improved Design */}
+        <div className="mb-16">
+          <div className="max-w-2xl mx-auto">
+            <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-blue-50">
+              <CardHeader className="text-center pb-6">
+                <CardTitle className="text-3xl text-green-600 flex items-center justify-center gap-3 mb-2">
+                  <Target className="w-8 h-8" />
+                  Retorno Projetado
+                </CardTitle>
+                <CardDescription className="text-lg text-gray-600">
+                  Impacto econômico esperado
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="text-center p-4 bg-white/70 rounded-lg border border-green-100">
+                    <div className="text-3xl font-bold text-green-600 mb-2">R$ 8.5M</div>
+                    <div className="text-sm text-gray-600 font-medium">Receita ano 1</div>
+                  </div>
+                  <div className="text-center p-4 bg-white/70 rounded-lg border border-blue-100">
+                    <div className="text-3xl font-bold text-blue-600 mb-2">425%</div>
+                    <div className="text-sm text-gray-600 font-medium">ROI projetado 3 anos</div>
+                  </div>
+                  <div className="text-center p-4 bg-white/70 rounded-lg border border-purple-100">
+                    <div className="text-3xl font-bold text-purple-600 mb-2">12.000+</div>
+                    <div className="text-sm text-gray-600 font-medium">Empresas impactadas</div>
+                  </div>
+                  <div className="text-center p-4 bg-white/70 rounded-lg border border-orange-100">
+                    <div className="text-3xl font-bold text-orange-600 mb-2">R$ 180M</div>
+                    <div className="text-sm text-gray-600 font-medium">Valor mercado potencial</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-blue-600">425%</div>
-                  <div className="text-sm text-gray-600">ROI projetado 3 anos</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-purple-600">12.000+</div>
-                  <div className="text-sm text-gray-600">Empresas impactadas</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-orange-600">R$ 180M</div>
-                  <div className="text-sm text-gray-600">Valor mercado potencial</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Key Metrics */}
