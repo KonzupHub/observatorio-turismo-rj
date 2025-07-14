@@ -71,7 +71,7 @@ export const OverviewTab = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <TourismChart 
-          title="Evolução do Turismo Internacional"
+          title="Taxa de Ocupação Hoteleira"
           data={[
             { month: 'Jan', tourists: 180000, revenue: 1200 },
             { month: 'Fev', tourists: 220000, revenue: 1400 },
@@ -99,7 +99,7 @@ export const OverviewTab = () => {
           <CardContent>
             <div className="space-y-4">
               {[
-                { country: 'Estados Unidos', percentage: 28.4, flag: '🇺🇸' },
+                { country: 'Município Unidos', percentage: 28.4, flag: '🇺🇸' },
                 { country: 'Argentina', percentage: 21.7, flag: '🇦🇷' },
                 { country: 'França', percentage: 12.3, flag: '🇫🇷' },
                 { country: 'Alemanha', percentage: 9.8, flag: '🇩🇪' },
