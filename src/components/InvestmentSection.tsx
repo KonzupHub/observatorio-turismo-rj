@@ -27,40 +27,37 @@ export const InvestmentSection = () => {
           </p>
         </div>
 
-        {/* Return Projections - Improved Design */}
+        {/* Return Projections - Horizontal Design */}
         <div className="mb-16">
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-blue-50">
-              <CardHeader className="text-center pb-6">
-                <CardTitle className="text-3xl text-green-600 flex items-center justify-center gap-3 mb-2">
-                  <Target className="w-8 h-8" />
-                  Retorno Projetado
-                </CardTitle>
-                <CardDescription className="text-lg text-gray-600">
-                  Impacto econômico esperado
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="text-center p-4 bg-white/70 rounded-lg border border-green-100">
-                    <div className="text-3xl font-bold text-green-600 mb-2">R$ 8.5M</div>
-                    <div className="text-sm text-gray-600 font-medium">Receita ano 1</div>
-                  </div>
-                  <div className="text-center p-4 bg-white/70 rounded-lg border border-blue-100">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">425%</div>
-                    <div className="text-sm text-gray-600 font-medium">ROI projetado 3 anos</div>
-                  </div>
-                  <div className="text-center p-4 bg-white/70 rounded-lg border border-purple-100">
-                    <div className="text-3xl font-bold text-purple-600 mb-2">12.000+</div>
-                    <div className="text-sm text-gray-600 font-medium">Empresas impactadas</div>
-                  </div>
-                  <div className="text-center p-4 bg-white/70 rounded-lg border border-orange-100">
-                    <div className="text-3xl font-bold text-orange-600 mb-2">R$ 180M</div>
-                    <div className="text-sm text-gray-600 font-medium">Valor mercado potencial</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-green-600 flex items-center justify-center gap-3 mb-2">
+                <Target className="w-8 h-8" />
+                Retorno Projetado
+              </h3>
+              <p className="text-lg text-gray-600">
+                Impacto econômico esperado
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">R$ 8.5M</div>
+                <div className="text-sm text-gray-600 font-medium">Receita ano 1</div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border border-blue-200 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">425%</div>
+                <div className="text-sm text-gray-600 font-medium">ROI projetado 3 anos</div>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200 text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">12.000+</div>
+                <div className="text-sm text-gray-600 font-medium">Empresas impactadas</div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200 text-center">
+                <div className="text-3xl font-bold text-orange-600 mb-2">R$ 180M</div>
+                <div className="text-sm text-gray-600 font-medium">Valor mercado potencial</div>
+              </div>
+            </div>
           </div>
         </div>
 
