@@ -40,7 +40,7 @@ export const HeroSection = () => {
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-300 to-white bg-clip-text text-transparent leading-tight">
-          Estado do Rio de Janeiro:<br />
+          Secretaria Municipal do Rio de Janeiro:<br />
           Dados que Encantam,<br />
           <span className="text-yellow-400">Insights que Movem Bilhões</span>
         </h1>
