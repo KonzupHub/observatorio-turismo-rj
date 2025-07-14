@@ -13,7 +13,7 @@ export const ImpactSection = () => {
             Dinheiro em Movimento
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Observatório de Dados do Estado:<br />
+            Observatório de Dados do Município:<br />
             <span className="text-yellow-400">Negócios que Concretizam</span>
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">

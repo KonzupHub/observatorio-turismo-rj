@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -117,7 +116,7 @@ export const AdvancedDataSection = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Taxa de Ocupação Hoteleira</CardTitle>
-                  <CardDescription>Dados mensais 2024 - Estado do RJ</CardDescription>
+                  <CardDescription>Dados mensais 2024 - Município do RJ</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={300}>
