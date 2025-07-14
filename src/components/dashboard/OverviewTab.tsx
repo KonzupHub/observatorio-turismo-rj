@@ -99,7 +99,7 @@ export const OverviewTab = () => {
           <CardContent>
             <div className="space-y-4">
               {[
-                { country: 'Municípios Unidos', percentage: 28.4, flag: '🇺🇸' },
+                { country: 'Estados Unidos', percentage: 28.4, flag: '🇺🇸' },
                 { country: 'Argentina', percentage: 21.7, flag: '🇦🇷' },
                 { country: 'França', percentage: 12.3, flag: '🇫🇷' },
                 { country: 'Alemanha', percentage: 9.8, flag: '🇩🇪' },
