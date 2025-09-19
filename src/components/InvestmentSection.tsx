@@ -7,7 +7,7 @@ import { Check, Rocket, Target, TrendingUp, Users, Building2, Globe } from 'luci
 
 export const InvestmentSection = () => {
   const openWhatsApp = () => {
-    window.open('https://wa.me/5521974534073', '_blank');
+    window.open('https://wa.me/5521997571775', '_blank');
   };
 
   return (
